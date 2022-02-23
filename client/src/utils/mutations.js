@@ -6,6 +6,17 @@ export const LOGIN_USER = gql`
       token
       user {
         username
+        _id
+        email
+        bookCount
+        savedBooks {
+          bookId
+          authors
+          description
+          title
+          image
+          link
+        }
       }
     }
   }
@@ -17,6 +28,17 @@ export const ADD_USER = gql`
       token
       user {
         username
+        _id
+        email
+        bookCount
+        savedBooks {
+          bookId
+          authors
+          description
+          title
+          image
+          link
+        }
       }
     }
   }
