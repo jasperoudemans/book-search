@@ -82,11 +82,6 @@ const SearchBooks = () => {
         variables: {
           bookToSave,
         },
-        context: {
-          headers: {
-            authorization: `Bearer ${token}`,
-          },
-        },
       });
 
       // if book successfully saves to user's account, save book id to state
